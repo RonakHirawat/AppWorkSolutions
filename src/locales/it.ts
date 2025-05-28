@@ -9,9 +9,9 @@ export const it = {
     getQuote: "Richiedi Preventivo"
   },
   hero: {
-    subtitle: "SVILUPPO PROFESSIONALE WEB E APP",
+    subtitle: "SVILUPPO WEB E APP PROFESSIONALE",
     title: "Trasforma la Tua Presenza Digitale",
-    description: "Servizi esperti di sviluppo web e app mobile che guidano la crescita aziendale. Creiamo soluzioni straordinarie e funzionali su misura per le tue esigenze uniche.",
+    description: "Servizi esperti di sviluppo web e app mobile che guidano la crescita del business. Creiamo soluzioni straordinarie e funzionali su misura per le tue esigenze uniche.",
     getStarted: "Inizia Ora",
     viewPortfolio: "Vedi Portfolio",
     scrollDown: "Scorri Giù"
@@ -21,24 +21,32 @@ export const it = {
     quickLinks: "Link Rapidi",
     contact: "Contatti",
     newsletter: "Newsletter",
-    newsletterDesc: "Iscriviti alla nostra newsletter per insights tecnologici e aggiornamenti.",
+    newsletterDesc: "Iscriviti alla nostra newsletter per approfondimenti tecnologici e aggiornamenti.",
     yourEmail: "Il tuo indirizzo email",
     subscribe: "Iscriviti",
     allRights: "Tutti i diritti riservati."
   },
   bookingForm: {
-    title: "Richiedi il tuo Preventivo",
+    title: "Richiedi il Tuo Preventivo",
     projectType: "Tipo di Progetto",
     timeline: "Tempistiche",
     budget: "Range di Budget",
     webApp: "Applicazione Web",
     mobileApp: "App Mobile",
     both: "Entrambi",
-    urgent: "Urgente",
+    urgent: "Il Prima Possibile",
     normal: "1-3 mesi",
     flexible: "Flessibile",
     checkAvailability: "Richiedi Preventivo",
-    quoteRequested: "Preventivo Richiesto!"
+    quoteRequested: "Preventivo Richiesto!",
+    checkIn: "Data Inizio",
+    checkOut: "Data Fine",
+    selectDate: "Seleziona data",
+    adults: "Dimensione Team",
+    children: "Requisiti Aggiuntivi",
+    adult: "sviluppatore",
+    child: "requisito",
+    bookingConfirmed: "Preventivo Richiesto con Successo!"
   },
   testimonials: {
     title: "Cosa Dicono i Nostri Clienti",
@@ -46,27 +54,27 @@ export const it = {
   },
   notFound: {
     title: "Pagina Non Trovata",
-    description: "Non siamo riusciti a trovare la pagina che stavi cercando. Forse hai preso una svolta sbagliata nel mondo digitale?",
+    description: "Non siamo riusciti a trovare la pagina che stavi cercando. Forse hai preso una strada sbagliata nel mondo digitale?",
     returnHome: "Torna alla Home"
   },
   home: {
     welcome: {
-      subtitle: "Benvenuti in AppWorkSolutions",
-      title: "Soluzioni Digitali che Generano Risultati",
-      description1: "Siamo un'azienda leader nello sviluppo web e app mobile specializzata nella creazione di soluzioni digitali innovative. Il nostro team combina tecnologia all'avanguardia con design creativo per fornire applicazioni che superano le aspettative.",
+      subtitle: "Benvenuto in AppWorkSolutions",
+      title: "Soluzioni Digitali che Portano Risultati",
+      description1: "Siamo un'azienda leader nello sviluppo di applicazioni web e mobile specializzata nella creazione di soluzioni digitali innovative. Il nostro team combina tecnologia all'avanguardia con design creativo per fornire applicazioni che superano le aspettative.",
       description2: "Dai siti web responsive alle potenti applicazioni mobile, aiutiamo le aziende a stabilire una forte presenza digitale e raggiungere i loro obiettivi attraverso la tecnologia.",
       learnMore: "Scopri di Più"
     },
     quote: {
-      subtitle: "Richiedi il tuo Preventivo",
+      subtitle: "Richiedi il Tuo Preventivo",
       title: "Inizia il Tuo Progetto Digitale",
-      description: "Pronto a dare vita alle tue idee? Ottieni un preventivo personalizzato per il tuo progetto di sviluppo web o app mobile. Il nostro processo semplificato garantisce tempi rapidi e prezzi trasparenti.",
+      description: "Pronto a dare vita alle tue idee? Ottieni un preventivo personalizzato per il tuo progetto di sviluppo web o app mobile. Il nostro processo semplificato garantisce tempi di risposta rapidi e prezzi trasparenti.",
       benefits: ["Consulenza gratuita", "Prezzi competitivi", "Sviluppo agile", "Supporto 24/7"]
     },
     services: {
       subtitle: "I Nostri Servizi",
       title: "Servizi in Evidenza",
-      description: "Esplora la nostra gamma completa di servizi di sviluppo progettati per soddisfare le esigenze aziendali.",
+      description: "Esplora la nostra gamma completa di servizi di sviluppo progettati per soddisfare le esigenze del tuo business.",
       viewAll: "Vedi Tutti i Servizi"
     },
     features: {
@@ -92,7 +100,7 @@ export const it = {
         },
         scalable: {
           title: "Architettura Scalabile",
-          description: "Costruito per crescere con le esigenze e i requisiti della tua azienda."
+          description: "Costruita per crescere con le esigenze e i requisiti del tuo business."
         },
         modern: {
           title: "Tecnologie Moderne",
@@ -101,7 +109,7 @@ export const it = {
       }
     },
     cta: {
-      title: "Pronto a Iniziare il Tuo Progetto?",
+      title: "Pronto per Iniziare il Tuo Progetto?",
       description: "Discutiamo delle tue idee e creiamo qualcosa di straordinario insieme. Contattaci oggi per una consulenza gratuita.",
       getQuote: "Richiedi Preventivo"
     }
@@ -128,7 +136,7 @@ export const it = {
           },
           {
             title: "Sviluppo CMS",
-            description: "Sistemi di gestione dei contenuti che rendono facile ed efficiente l'aggiornamento del tuo sito."
+            description: "Sistemi di gestione dei contenuti che rendono l'aggiornamento del tuo sito facile ed efficiente."
           }
         ]
       },
@@ -142,7 +150,7 @@ export const it = {
           },
           {
             title: "App Android",
-            description: "Applicazioni Android native con principi Material Design."
+            description: "Applicazioni Android native con principi di Material Design."
           },
           {
             title: "Cross-Platform",
@@ -159,12 +167,12 @@ export const it = {
         description: "Design centrato sull'utente che crea esperienze intuitive e coinvolgenti.",
         items: [
           {
-            title: "Design dell'Interfaccia Utente",
-            description: "Interfacce belle e intuitive con cui gli utenti amano interagire."
+            title: "Design Interfacce Utente",
+            description: "Interfacce belle e intuitive che gli utenti amano utilizzare."
           },
           {
-            title: "Design dell'Esperienza Utente",
-            description: "Ricerca UX completa e design per percorsi utente ottimali."
+            title: "Design Esperienza Utente",
+            description: "Ricerca e design UX completi per percorsi utente ottimali."
           },
           {
             title: "Prototipazione",
@@ -182,7 +190,7 @@ export const it = {
         items: [
           {
             title: "Strategia Tecnologica",
-            description: "Pianificazione strategica per allineare la tecnologia con i tuoi obiettivi aziendali."
+            description: "Pianificazione strategica per allineare la tecnologia con i tuoi obiettivi di business."
           },
           {
             title: "Trasformazione Digitale",
@@ -202,7 +210,7 @@ export const it = {
   },
   portfolio: {
     title: "Il Nostro Portfolio",
-    subtitle: "Esplora i nostri progetti di successo e scopri come abbiamo aiutato le aziende a raggiungere i loro obiettivi digitali.",
+    subtitle: "Esplora i nostri progetti di successo e vedi come abbiamo aiutato le aziende a raggiungere i loro obiettivi digitali.",
     filters: {
       all: "Tutti",
       web: "App Web",
@@ -212,7 +220,7 @@ export const it = {
   },
   contact: {
     title: "Contattaci",
-    subtitle: "Pronto a iniziare il tuo progetto? Mettiti in contatto con il nostro team di esperti per una consulenza gratuita.",
+    subtitle: "Pronto per iniziare il tuo progetto? Mettiti in contatto con il nostro team di esperti per una consulenza gratuita.",
     getInTouch: "Mettiti in Contatto",
     address: "Indirizzo",
     phone: "Telefono",
@@ -234,7 +242,7 @@ export const it = {
     questions: {
       timeline: {
         question: "Quanto tempo richiede un progetto tipico?",
-        answer: "I tempi del progetto variano in base alla complessità. I siti web semplici richiedono 2-4 settimane, mentre le applicazioni web complesse possono richiedere 3-6 mesi. Forniamo tempistiche dettagliate durante la nostra consulenza."
+        answer: "I tempi dei progetti variano in base alla complessità. I siti web semplici richiedono 2-4 settimane, mentre le applicazioni web complesse possono richiedere 3-6 mesi. Forniamo tempistiche dettagliate durante la nostra consulenza."
       },
       cost: {
         question: "Quanto costano i vostri servizi?",
@@ -242,20 +250,38 @@ export const it = {
       },
       technologies: {
         question: "Quali tecnologie utilizzate?",
-        answer: "Utilizziamo tecnologie moderne inclusi React, Node.js, Python, React Native, Flutter e piattaforme cloud come AWS e Azure. Scegliamo il miglior stack tecnologico per ogni progetto."
+        answer: "Utilizziamo tecnologie moderne tra cui React, Node.js, React Native, Flutter e piattaforme cloud come AWS e Google Cloud per costruire soluzioni scalabili."
       },
       support: {
         question: "Fornite supporto continuo?",
-        answer: "Sì, offriamo pacchetti completi di manutenzione e supporto per garantire che la tua applicazione continui a funzionare in modo ottimale dopo il lancio."
+        answer: "Sì, offriamo pacchetti completi di supporto e manutenzione per garantire che le tue applicazioni continuino a funzionare in modo ottimale dopo il lancio."
       },
       process: {
         question: "Qual è il vostro processo di sviluppo?",
-        answer: "Seguiamo una metodologia di sviluppo agile con comunicazione regolare con il cliente, sviluppo iterativo e test continui per garantire risultati di qualità."
+        answer: "Seguiamo una metodologia di sviluppo agile con controlli regolari, comunicazione trasparente e sviluppo iterativo per garantire il successo del progetto."
       },
       team: {
-        question: "Chi lavorerà al mio progetto?",
-        answer: "Il nostro team esperto include sviluppatori senior, designer e project manager che saranno dedicati al tuo progetto dall'inizio alla fine."
+        question: "Posso lavorare direttamente con il vostro team di sviluppo?",
+        answer: "Assolutamente! Crediamo nella comunicazione trasparente e avrai accesso diretto ai nostri project manager e al team di sviluppo durante tutto il progetto."
       }
     }
+  },
+  apartments: {
+    title: "I Nostri Progetti",
+    subtitle: "Esplora i nostri progetti di sviluppo di successo e casi di studio.",
+    featured: "Progetti in Evidenza",
+    viewDetails: "Vedi Dettagli",
+    bookNow: "Richiedi Preventivo"
+  },
+  apartmentDescriptions: {
+    deluxe: "Applicazione web premium con funzionalità avanzate e design moderno.",
+    premium: "App mobile ad alte prestazioni con esperienza utente fluida.",
+    family: "Soluzione full-stack che combina piattaforme web e mobile.",
+    penthouse: "Applicazione enterprise con architettura scalabile."
+  },
+  booking: {
+    availableFrom: "Disponibile da",
+    perNight: "per progetto",
+    bookNow: "Richiedi Preventivo"
   }
 };

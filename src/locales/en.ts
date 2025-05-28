@@ -38,7 +38,15 @@ export const en = {
     normal: "1-3 months",
     flexible: "Flexible",
     checkAvailability: "Get Quote",
-    quoteRequested: "Quote Requested!"
+    quoteRequested: "Quote Requested!",
+    checkIn: "Start Date",
+    checkOut: "End Date",
+    selectDate: "Select date",
+    adults: "Team Size",
+    children: "Additional Requirements",
+    adult: "developer",
+    child: "requirement",
+    bookingConfirmed: "Quote Requested Successfully!"
   },
   testimonials: {
     title: "What Our Clients Say",
@@ -242,20 +250,38 @@ export const en = {
       },
       technologies: {
         question: "What technologies do you use?",
-        answer: "We use modern technologies including React, Node.js, Python, React Native, Flutter, and cloud platforms like AWS and Azure. We choose the best technology stack for each project."
+        answer: "We use modern technologies including React, Node.js, React Native, Flutter, and cloud platforms like AWS and Google Cloud to build scalable solutions."
       },
       support: {
         question: "Do you provide ongoing support?",
-        answer: "Yes, we offer comprehensive maintenance and support packages to ensure your application continues to perform optimally after launch."
+        answer: "Yes, we offer comprehensive support and maintenance packages to ensure your applications continue to perform optimally after launch."
       },
       process: {
         question: "What is your development process?",
-        answer: "We follow an agile development methodology with regular client communication, iterative development, and continuous testing to ensure quality deliverables."
+        answer: "We follow an agile development methodology with regular check-ins, transparent communication, and iterative development to ensure project success."
       },
       team: {
-        question: "Who will work on my project?",
-        answer: "Our experienced team includes senior developers, designers, and project managers who will be dedicated to your project from start to finish."
+        question: "Can I work directly with your development team?",
+        answer: "Absolutely! We believe in transparent communication and you'll have direct access to our project managers and development team throughout the project."
       }
     }
+  },
+  apartments: {
+    title: "Our Projects",
+    subtitle: "Explore our successful development projects and case studies.",
+    featured: "Featured Projects",
+    viewDetails: "View Details",
+    bookNow: "Get Quote"
+  },
+  apartmentDescriptions: {
+    deluxe: "Premium web application with advanced features and modern design.",
+    premium: "High-performance mobile app with seamless user experience.",
+    family: "Full-stack solution combining web and mobile platforms.",
+    penthouse: "Enterprise-grade application with scalable architecture."
+  },
+  booking: {
+    availableFrom: "Available from",
+    perNight: "per project",
+    bookNow: "Get Quote"
   }
 };
