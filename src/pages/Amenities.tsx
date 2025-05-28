@@ -3,9 +3,9 @@ import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Spa, Dumbbell, Pool, Yoga, Utensils, Wine, Coffee, Clock, Car, Plane, Car as CarIcon, MapPin, Waves, Users, Music, BookOpen } from "lucide-react";
+import { Code, Smartphone, Monitor, Globe, Palette, Search, Users, Headphones, Shield, Zap, Database, Cloud } from "lucide-react";
 
-export default function Amenities() {
+export default function Services() {
   const { t } = useLanguage();
   
   useEffect(() => {
@@ -13,16 +13,16 @@ export default function Amenities() {
     window.scrollTo(0, 0);
   }, []);
   
-  // Helper function to get the appropriate icon for each amenity
+  // Helper function to get the appropriate icon for each service
   const getIcon = (categoryName: string, index: number) => {
     const icons = {
-      wellness: [<Spa key={0} />, <Dumbbell key={1} />, <Pool key={2} />, <Yoga key={3} />],
-      dining: [<Utensils key={0} />, <Coffee key={1} />, <Wine key={2} />, <Clock key={3} />],
-      services: [<Clock key={0} />, <Plane key={1} />, <CarIcon key={2} />, <MapPin key={3} />],
-      entertainment: [<Waves key={0} />, <Users key={1} />, <Music key={2} />, <BookOpen key={3} />]
+      web: [<Monitor key={0} />, <Globe key={1} />, <Database key={2} />, <Cloud key={3} />],
+      mobile: [<Smartphone key={0} />, <Code key={1} />, <Zap key={2} />, <Search key={3} />],
+      design: [<Palette key={0} />, <Users key={1} />, <Monitor key={2} />, <Smartphone key={3} />],
+      consulting: [<Shield key={0} />, <Zap key={1} />, <Code key={2} />, <Headphones key={3} />]
     };
     
-    return icons[categoryName as keyof typeof icons]?.[index] || <Coffee />;
+    return icons[categoryName as keyof typeof icons]?.[index] || <Code />;
   };
   
   return (
@@ -35,13 +35,13 @@ export default function Amenities() {
           <div className="container relative z-10 pt-20">
             <div className="text-center max-w-3xl mx-auto">
               <span className="text-sm text-primary font-medium uppercase tracking-wider">
-                MareSereno
+                AppWorkSolutions
               </span>
               <h1 className="text-4xl md:text-5xl font-bold mt-2 mb-6">
-                {t.amenitiesPage.title}
+                {t.services.title}
               </h1>
               <p className="text-muted-foreground">
-                {t.amenitiesPage.subtitle}
+                {t.services.subtitle}
               </p>
             </div>
           </div>
@@ -53,20 +53,9 @@ export default function Amenities() {
           </div>
         </section>
         
-        {/* Description Section */}
-        <section className="py-16">
-          <div className="container">
-            <div className="max-w-3xl mx-auto text-center">
-              <p className="text-lg text-muted-foreground">
-                {t.amenitiesPage.description}
-              </p>
-            </div>
-          </div>
-        </section>
-        
         {/* Categories Sections */}
-        {Object.keys(t.amenitiesPage.categories).map((category, categoryIndex) => {
-          const categoryData = t.amenitiesPage.categories[category as keyof typeof t.amenitiesPage.categories];
+        {Object.keys(t.services.categories).map((category, categoryIndex) => {
+          const categoryData = t.services.categories[category as keyof typeof t.services.categories];
           const isEven = categoryIndex % 2 === 0;
           
           return (
@@ -101,31 +90,44 @@ export default function Amenities() {
           );
         })}
         
-        {/* Gallery Section */}
+        {/* Portfolio Gallery Section */}
         <section className="py-16">
           <div className="container">
             <div className="text-center max-w-3xl mx-auto mb-12">
               <h2 className="text-3xl font-bold mb-4">
-                {t.gallery.title}
+                {t.portfolio.title}
               </h2>
               <p className="text-muted-foreground">
-                {t.gallery.subtitle}
+                {t.portfolio.subtitle}
               </p>
             </div>
             
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              {Array.from({ length: 8 }).map((_, index) => (
-                <div 
-                  key={index} 
-                  className="aspect-square rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105"
-                >
-                  <img 
-                    src={`https://images.unsplash.com/photo-${1550000000000 + index * 100000}?w=400&h=400&fit=crop`}
-                    alt={`Amenity ${index + 1}`}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
+              {Array.from({ length: 8 }).map((_, index) => {
+                const images = [
+                  "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=400&fit=crop",
+                  "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=400&fit=crop",
+                  "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=400&fit=crop",
+                  "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=400&fit=crop",
+                  "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=400&fit=crop",
+                  "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=400&fit=crop",
+                  "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=400&fit=crop",
+                  "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=400&fit=crop"
+                ];
+                
+                return (
+                  <div 
+                    key={index} 
+                    className="aspect-square rounded-lg overflow-hidden shadow-md transition-transform hover:scale-105"
+                  >
+                    <img 
+                      src={images[index]}
+                      alt={`Project ${index + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
