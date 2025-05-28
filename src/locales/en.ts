@@ -6,14 +6,21 @@ export const en = {
     portfolio: "Portfolio", 
     about: "About",
     contact: "Contact",
-    getQuote: "Get Quote"
+    getQuote: "Get Quote",
+    apartments: "Portfolio",
+    amenities: "Services",
+    gallery: "Portfolio",
+    bookNow: "Get Quote"
   },
   hero: {
     title: "Professional Web & App Development",
     subtitle: "Transform your ideas into powerful digital solutions",
     description: "We specialize in creating custom websites, mobile applications, and digital platforms that drive business growth and user engagement.",
     cta: "Get Free Quote",
-    secondaryCta: "View Portfolio"
+    secondaryCta: "View Portfolio",
+    getStarted: "Get Started",
+    viewPortfolio: "View Portfolio",
+    scrollDown: "Scroll Down"
   },
   home: {
     welcome: {
@@ -184,6 +191,21 @@ export const en = {
       night: " budget"
     }
   },
+  apartments: {
+    title: "Our Projects",
+    subtitle: "Explore our successful development projects and case studies.",
+    featured: "Featured Projects",
+    viewDetails: "View Details",
+    bookNow: "Get Quote",
+    filters: {
+      all: "All",
+      web: "Web Apps",
+      mobile: "Mobile Apps",
+      ecommerce: "E-commerce"
+    },
+    viewAll: "View All Projects",
+    night: " project"
+  },
   apartmentDescriptions: {
     deluxe: "Premium web application with advanced features and modern design.",
     superior: "High-quality mobile app with excellent user experience and performance.",
@@ -237,6 +259,18 @@ export const en = {
     bookNow: "Get Quote",
     summary: "Project Summary"
   },
+  bookingForm: {
+    title: "Request Your Quote",
+    checkIn: "Project Start",
+    checkOut: "Project End",
+    selectDate: "Select date",
+    adults: "Team Size",
+    children: "Additional Features",
+    adult: "developer",
+    child: "feature",
+    checkAvailability: "Request Quote",
+    bookingConfirmed: "Quote Requested Successfully!"
+  },
   gallery: {
     title: "Our Portfolio", 
     subtitle: "Explore our successful projects and case studies.",
@@ -250,6 +284,8 @@ export const en = {
   footer: {
     company: "AppWorkSolutions",
     description: "Professional web and mobile app development services for businesses of all sizes.",
+    quickLinks: "Quick Links",
+    contact: "Contact Info",
     links: {
       company: "Company",
       services: "Services", 
@@ -261,11 +297,15 @@ export const en = {
       placeholder: "Enter your email",
       subscribe: "Subscribe"
     },
+    newsletterDesc: "Subscribe to our newsletter for the latest tech insights and project updates.",
+    yourEmail: "Enter your email",
+    subscribe: "Subscribe",
     bottom: {
       rights: "All rights reserved.",
       privacy: "Privacy Policy",
       terms: "Terms of Service"
-    }
+    },
+    allRights: "All rights reserved."
   },
   notFound: {
     title: "Page Not Found",

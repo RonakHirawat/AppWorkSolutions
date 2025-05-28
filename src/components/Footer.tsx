@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div className="animate-fade-in [animation-delay:100ms]">
-            <h4 className="text-xl font-bold mb-4">MareSereno</h4>
+            <h4 className="text-xl font-bold mb-4">{t.footer.company}</h4>
             <p className="text-muted-foreground mb-4">
               {t.footer.description}
             </p>
@@ -37,11 +37,10 @@ export default function Footer() {
             <ul className="space-y-2">
               {[
                 { name: t.nav.home, path: "/" },
-                { name: t.nav.apartments, path: "/apartments" },
-                { name: t.nav.amenities, path: "/amenities" },
-                { name: t.nav.gallery, path: "/gallery" },
+                { name: t.nav.services, path: "/services" },
+                { name: t.nav.portfolio, path: "/portfolio" },
                 { name: t.nav.contact, path: "/contact" },
-                { name: t.nav.bookNow, path: "/booking" },
+                { name: t.nav.getQuote, path: "/quote" },
               ].map((link) => (
                 <li key={link.name}>
                   <Link 
@@ -61,31 +60,31 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-2 mt-0.5 text-primary" />
                 <span className="text-muted-foreground">
-                  123 Seaside Boulevard<br />
-                  Costa Bella, 12345<br />
-                  Italy
+                  123 Business District<br />
+                  Tech City, TC 12345<br />
+                  USA
                 </span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 mr-2 text-primary" />
-                <span className="text-muted-foreground">+39 123 4567 890</span>
+                <span className="text-muted-foreground">+1 (555) 123-4567</span>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 mr-2 text-primary" />
-                <span className="text-muted-foreground">info@maresereno.com</span>
+                <span className="text-muted-foreground">hello@appworksolutions.com</span>
               </li>
             </ul>
           </div>
           
           <div className="animate-fade-in [animation-delay:400ms]">
-            <h4 className="text-xl font-bold mb-4">{t.footer.newsletter}</h4>
+            <h4 className="text-xl font-bold mb-4">{t.footer.newsletter.title}</h4>
             <p className="text-muted-foreground mb-4">
-              {t.footer.newsletterDesc}
+              {t.footer.newsletter.subtitle}
             </p>
             <form className="flex flex-col space-y-2">
               <input 
                 type="email" 
-                placeholder={t.footer.yourEmail} 
+                placeholder={t.footer.newsletter.placeholder} 
                 className="rounded-md px-4 py-2 bg-muted text-foreground"
                 required 
               />
@@ -93,14 +92,14 @@ export default function Footer() {
                 type="submit" 
                 className="btn-primary mt-2"
               >
-                {t.footer.subscribe}
+                {t.footer.newsletter.subscribe}
               </button>
             </form>
           </div>
         </div>
         
         <div className="border-t border-border pt-8 mt-8 text-center text-muted-foreground">
-          <p>&copy; {currentYear} MareSereno. {t.footer.allRights}</p>
+          <p>&copy; {currentYear} {t.footer.company}. {t.footer.bottom.rights}</p>
         </div>
       </div>
     </footer>
