@@ -109,6 +109,96 @@ export const en = {
         features: ["Technology Assessment", "Architecture Planning", "Process Optimization", "Digital Strategy"]
       }
     },
+    categories: {
+      web: {
+        title: "Web Development",
+        description: "Custom websites and web applications built with modern frameworks",
+        items: [
+          {
+            title: "Custom Websites",
+            description: "Tailored websites designed to represent your brand and engage your audience."
+          },
+          {
+            title: "E-commerce Solutions",
+            description: "Powerful online stores with secure payment processing and inventory management."
+          },
+          {
+            title: "Web Applications",
+            description: "Complex web apps with advanced features and seamless user experience."
+          },
+          {
+            title: "CMS Development",
+            description: "Content management systems that make updating your site easy and efficient."
+          }
+        ]
+      },
+      mobile: {
+        title: "Mobile App Development",
+        description: "Native and cross-platform mobile applications for iOS and Android",
+        items: [
+          {
+            title: "iOS Apps",
+            description: "Native iOS applications optimized for iPhone and iPad devices."
+          },
+          {
+            title: "Android Apps",
+            description: "Native Android applications with Material Design principles."
+          },
+          {
+            title: "Cross-Platform",
+            description: "React Native and Flutter apps that work seamlessly on both platforms."
+          },
+          {
+            title: "App Store Optimization",
+            description: "Complete deployment and optimization for app store visibility."
+          }
+        ]
+      },
+      design: {
+        title: "UI/UX Design",
+        description: "User-centered design that creates intuitive and engaging experiences",
+        items: [
+          {
+            title: "User Interface Design",
+            description: "Beautiful and intuitive interfaces that users love to interact with."
+          },
+          {
+            title: "User Experience Design",
+            description: "Comprehensive UX research and design for optimal user journeys."
+          },
+          {
+            title: "Prototyping",
+            description: "Interactive prototypes to validate concepts before development."
+          },
+          {
+            title: "Brand Identity",
+            description: "Complete brand identity design including logos and style guides."
+          }
+        ]
+      },
+      consulting: {
+        title: "IT Consulting",
+        description: "Strategic technology consulting to help you make informed decisions",
+        items: [
+          {
+            title: "Technology Strategy",
+            description: "Strategic planning to align technology with your business goals."
+          },
+          {
+            title: "Digital Transformation",
+            description: "Guide your business through digital transformation initiatives."
+          },
+          {
+            title: "Code Review",
+            description: "Professional code audits to ensure quality and best practices."
+          },
+          {
+            title: "Performance Optimization",
+            description: "Optimize existing applications for better performance and efficiency."
+          }
+        ]
+      }
+    },
     process: {
       title: "Our Development Process",
       subtitle: "How we work",
@@ -188,7 +278,8 @@ export const en = {
       fourPlus: "Enterprise (15+)",
       allLocations: "All Technologies",
       more: "Learn More",
-      night: " budget"
+      night: " budget",
+      viewDetails: "View Details"
     }
   },
   apartments: {
@@ -214,6 +305,50 @@ export const en = {
   contact: {
     title: "Contact Us",
     subtitle: "Ready to start your project? Get in touch with our team.",
+    getInTouch: "Get In Touch",
+    address: "Address",
+    phone: "Phone",
+    email: "Email",
+    businessHours: "Business Hours",
+    mondayFriday: "Monday - Friday: 9:00 AM - 6:00 PM",
+    weekends: "Weekends: By appointment",
+    sendMessage: "Send Us a Message",
+    fullName: "Full Name",
+    phoneNumber: "Phone Number",
+    subject: "Subject",
+    message: "Message",
+    howCanWeHelp: "How can we help you with your project?",
+    send: "Send Message",
+    messageSent: "Message Sent!",
+    thankYou: "Thank you for contacting us. We'll respond to your message within 24 hours.",
+    faq: "Frequently Asked Questions",
+    faqSubtitle: "Find quick answers to common questions about our development services.",
+    questions: {
+      timeline: {
+        question: "How long does a typical project take?",
+        answer: "Project timelines vary based on complexity. Simple websites take 2-4 weeks, while complex web applications can take 3-6 months. We provide detailed timelines during our consultation."
+      },
+      cost: {
+        question: "How much do your services cost?",
+        answer: "Costs depend on project scope and requirements. We offer competitive pricing and provide detailed quotes after understanding your specific needs. Contact us for a free consultation."
+      },
+      technologies: {
+        question: "What technologies do you use?",
+        answer: "We use modern technologies including React, Node.js, React Native, Flutter, and cloud platforms like AWS and Google Cloud to build scalable solutions."
+      },
+      support: {
+        question: "Do you provide ongoing support?",
+        answer: "Yes, we offer comprehensive support and maintenance packages to ensure your applications continue to perform optimally after launch."
+      },
+      process: {
+        question: "What is your development process?",
+        answer: "We follow an agile development methodology with regular check-ins, transparent communication, and iterative development to ensure project success."
+      },
+      team: {
+        question: "Can I work directly with your development team?",
+        answer: "Absolutely! We believe in transparent communication and you'll have direct access to our project managers and development team throughout the project."
+      }
+    },
     form: {
       name: "Full Name",
       email: "Email Address", 
@@ -315,6 +450,7 @@ export const en = {
   testimonials: {
     title: "What Our Clients Say",
     subtitle: "Don't just take our word for it - see what our satisfied clients have to say about working with AppWorkSolutions.",
+    description: "Discover why businesses trust AppWorkSolutions for their digital transformation needs.",
     items: [
       {
         name: "Sarah Johnson",
