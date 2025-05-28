@@ -47,8 +47,8 @@ export default function HeroSection() {
           {/* <span className="inline-block text-white/90 text-lg mb-4 tracking-wide border-b border-white/60 pb-2">
             {t.hero.subtitle}
           </span> */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-5xl">
-            <span className="bg-black/40 backdrop-blur-xl px-2 rounded">
+          <h1 className="text-4xl md:text-3xl lg:text-5xl font-extrabold text-white mb-6 drop-shadow-5xl">
+            <span className="bg-black/0 backdrop-blur-xl px-2 rounded">
               {t.hero.title}
             </span>
           </h1>
