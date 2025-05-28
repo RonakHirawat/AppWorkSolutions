@@ -1,9 +1,12 @@
-
 import { useEffect, useState } from "react";
 import { Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export default function ThemeToggle() {
+interface ThemeToggleProps {
+  iconClassName?: string;
+}
+
+export default function ThemeToggle({ iconClassName = "" }: ThemeToggleProps) {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
@@ -39,9 +42,9 @@ export default function ThemeToggle() {
       className="rounded-full w-10 h-10 transition-all duration-300 hover:bg-muted"
     >
       {isDark ? (
-        <Sun className="h-5 w-5 transition-transform duration-500 rotate-0" />
+        <Sun className={`h-5 w-5 transition-transform duration-500 rotate-0 ${iconClassName}`} />
       ) : (
-        <Moon className="h-5 w-5 transition-transform duration-500 rotate-0" />
+        <Moon className={`h-5 w-5 transition-transform duration-500 rotate-0 ${iconClassName}`} />
       )}
       <span className="sr-only">Toggle theme</span>
     </Button>

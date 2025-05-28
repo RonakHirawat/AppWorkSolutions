@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -35,8 +34,8 @@ export default function Navbar() {
     return path === "/" || path === "/contact";
   };
   
-  return<header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300", scrolled ? "bg-black/80 backdrop-blur-lg py-3 shadow-md" : "bg-black py-5")}>
-
+  return (
+    <header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300", scrolled ? "bg-black/20 backdrop-blur-sm py-3 shadow-md" : "bg-black py-5")}>
       <nav className="container flex justify-between items-center">
         <div className="flex items-center">
           <Link to="/" className="text-xl font-bold text-primary">
@@ -46,31 +45,31 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex space-x-8">
-          {navLinks.map(link => <li key={link.name} className="relative">
+          {navLinks.map(link => (
+            <li key={link.name} className="relative">
               <Link 
                 to={link.path} 
                 className={cn(
                   "font-medium transition-colors hover:text-primary after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full",
-                  isHighlighted(link.path) && "text-primary font-bold",
-                  location.pathname === link.path && "text-primary after:w-full"
+                  (link.path === "/services" || isHighlighted(link.path)) && "text-primary font-bold",
+                  location.pathname === link.path && "after:w-full"
                 )}
               >
                 {link.name}
               </Link>
-            </li>)}
+            </li>
+          ))}
         </ul>
 
-        <div className="hidden md:flex items-center space-x-2">
-          <ThemeToggle />
-          {/* <Button asChild className="btn-primary">
-            <Link to="/quote">{t.nav.getQuote}</Link>
-          </Button> */}
-        </div>
-
-        {/* Mobile Navigation */}
-        <div className="md:hidden flex items-center space-x-2">
-          <ThemeToggle />
-          <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="rounded-full">
+        <div className="flex items-center space-x-2">
+          <ThemeToggle iconClassName="text-primary hover:text-primary" />
+          
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
+            className="md:hidden rounded-full text-primary hover:text-primary"
+          >
             {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
         </div>
@@ -85,33 +84,35 @@ export default function Navbar() {
                 <Link to="/" className="text-xl font-bold text-primary">
                   AppWorkSolutions
                 </Link>
-                <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(false)} className="rounded-full">
+                <Button 
+                  variant="ghost" 
+                  size="icon" 
+                  onClick={() => setMobileMenuOpen(false)} 
+                  className="rounded-full text-primary hover:text-primary"
+                >
                   <X className="h-6 w-6" />
                 </Button>
               </div>
               <ul className="space-y-6">
-                {navLinks.map(link => <li key={link.name}>
+                {navLinks.map(link => (
+                  <li key={link.name}>
                     <Link 
                       to={link.path} 
                       className={cn(
                         "text-lg font-medium transition-colors hover:text-primary",
-                        isHighlighted(link.path) && "text-primary font-bold"
+                        (link.path === "/services" || isHighlighted(link.path)) && "text-primary font-bold"
                       )} 
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {link.name}
                     </Link>
-                  </li>)}
+                  </li>
+                ))}
               </ul>
             </div>
-            
-            <Button asChild className="w-full btn-primary mt-6">
-              {/* <Link to="/quote" onClick={() => setMobileMenuOpen(false)}>
-                {t.nav.getQuote}
-              </Link> */}
-            </Button>
           </div>
         </div>
       </div>
-    </header>;
+    </header>
+  );
 }
