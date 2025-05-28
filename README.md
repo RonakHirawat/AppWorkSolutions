@@ -1,69 +1,45 @@
-# Welcome to your Lovable project
+# AppworkSolutions
 
-## Project info
+**AppworkSolutions** is a customer-first software development company that crafts tailored applications, websites, and stunning UI/UX solutions based on client needs. Our agile team delivers modern, scalable, and responsive products across industries using cutting-edge web technologies.
 
-**URL**: https://lovable.dev/projects/96f629c9-6031-4f68-8bd0-680a3c64b6e3
+---
 
-## How can I edit this code?
+## 🚀 What We Do
 
-There are several ways of editing your application.
+We specialize in building:
 
-**Use Lovable**
+- 🖥️ Custom Websites & Web Applications  
+- 📱 Mobile-Friendly Interfaces  
+- 🎨 UI/UX Designs for Startups & Enterprises  
+- 🧩 Full-Stack Development on Demand  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/96f629c9-6031-4f68-8bd0-680a3c64b6e3) and start prompting.
+Whether you're a startup looking to launch quickly or an enterprise aiming to upgrade your digital infrastructure, we adapt to your vision and deliver value with precision.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🛠 Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+This project is built with:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- ⚡ [Vite](https://vitejs.dev/) – Fast and optimized frontend tooling
+- 💡 [TypeScript](https://www.typescriptlang.org/) – Typed JavaScript for scalable code
+- ⚛️ [React](https://react.dev/) – Component-based user interfaces
+- 🧱 [shadcn/ui](https://ui.shadcn.com/) – Beautiful, accessible UI components
+- 🎨 [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS for rapid styling
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 📁 Project Structure
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/96f629c9-6031-4f68-8bd0-680a3c64b6e3) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+```bash
+.
+├── public/                 # Static assets
+├── src/
+│   ├── components/         # Reusable UI components (Navbar, Footer, Forms)
+│   ├── contexts/           # Global state providers (e.g., Language Context)
+│   ├── pages/              # Individual pages (Home, Contact, About)
+│   ├── App.tsx            # App entry point
+│   └── main.tsx           # Vite + React bootstrapping
+├── tailwind.config.ts     # Tailwind config
+├── tsconfig.json          # TypeScript config
+└── vite.config.ts         # Vite config
