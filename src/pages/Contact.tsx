@@ -17,27 +17,27 @@ export default function Contact() {
     subject: "",
     message: ""
   });
-  
+
   const [isSubmitted, setIsSubmitted] = useState(false);
-  
+
   useEffect(() => {
     // Scroll to top when component mounts
     window.scrollTo(0, 0);
   }, []);
-  
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
-  
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // In a real app, this would send the form data to a server
     console.log("Form submitted:", formData);
-    
+
     setIsSubmitted(true);
-    
+
     // Reset form after 3 seconds
     setTimeout(() => {
       setIsSubmitted(false);
@@ -50,11 +50,11 @@ export default function Contact() {
       });
     }, 3000);
   };
-  
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      
+
       <main className="flex-1 pt-20">
         {/* Header Section */}
         <section className="relative py-20 bg-gradient-to-r from-sea-light to-white dark:from-sea-dark dark:to-background overflow-hidden">
@@ -68,14 +68,14 @@ export default function Contact() {
               </p>
             </div>
           </div>
-          
+
           {/* Decorative elements */}
           <div className="absolute top-0 right-0 w-1/3 h-full opacity-10">
             <div className="absolute top-10 right-10 w-64 h-64 rounded-full bg-primary/50 blur-3xl" />
             <div className="absolute bottom-10 right-40 w-48 h-48 rounded-full bg-sea-light blur-3xl" />
           </div>
         </section>
-        
+
         {/* Contact Information & Form */}
         <section className="section">
           <div className="container">
@@ -83,7 +83,7 @@ export default function Contact() {
               {/* Contact Information */}
               <div className="animate-fade-in [animation-delay:100ms]">
                 <h2 className="text-2xl font-bold mb-6">{t.contact.getInTouch}</h2>
-                
+
                 <div className="glass-card p-6 space-y-6 mb-8">
                   <div className="flex items-start">
                     <div className="flex-shrink-0 h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center mr-4">
@@ -92,35 +92,35 @@ export default function Contact() {
                     <div>
                       <h3 className="font-semibold mb-1">{t.contact.address}</h3>
                       <p className="text-muted-foreground">
-                        123 Tech Street<br />
-                        Digital District, 12345<br />
-                        United States
+                        G-202, Marbella Grand <br />
+                        Mohali, Punjab<br />
+                        INDIA
                       </p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <div className="flex-shrink-0 h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center mr-4">
                       <Phone className="h-5 w-5 text-primary" />
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">{t.contact.phone}</h3>
-                      <p className="text-muted-foreground">+1 (555) 123-4567</p>
-                      <p className="text-muted-foreground">+1 (555) 987-6543 (Projects)</p>
+                      <p className="text-muted-foreground">+91 8806828336</p>
+                      {/* <p className="text-muted-foreground">+1 (555) 987-6543 (Projects)</p> */}
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <div className="flex-shrink-0 h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center mr-4">
                       <Mail className="h-5 w-5 text-primary" />
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">{t.contact.email}</h3>
-                      <p className="text-muted-foreground">info@appworksolutions.com</p>
-                      <p className="text-muted-foreground">projects@appworksolutions.com</p>
+                      <p className="text-muted-foreground">surbhi512@gmail.com</p>
+                      {/* <p className="text-muted-foreground">projects@appworksolutions.com</p> */}
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <div className="flex-shrink-0 h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center mr-4">
                       <Clock className="h-5 w-5 text-primary" />
@@ -134,92 +134,92 @@ export default function Contact() {
                     </div>
                   </div>
                 </div>
-                
-                <div className="aspect-video rounded-xl overflow-hidden">
-                  <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.03606358136!2d-74.309!3d40.697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzAwLjAiTiA3NMKwMTEnMzYuMCJX!5e0!3m2!1sen!2sus!4v1234567890" 
-                    width="100%" 
-                    height="100%" 
-                    style={{ border: 0 }} 
-                    allowFullScreen 
+
+                {/* <div className="aspect-video rounded-xl overflow-hidden">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.03606358136!2d-74.309!3d40.697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzAwLjAiTiA3NMKwMTEnMzYuMCJX!5e0!3m2!1sen!2sus!4v1234567890"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
                     loading="lazy"
                     title="Location Map"
                   />
-                </div>
+                </div> */}
               </div>
-              
+
               {/* Contact Form */}
               <div className="animate-fade-in [animation-delay:300ms]">
                 <h2 className="text-2xl font-bold mb-6">{t.contact.sendMessage}</h2>
-                
+
                 <div className="glass-card p-6">
                   {!isSubmitted ? (
                     <form onSubmit={handleSubmit} className="space-y-6">
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div className="space-y-2">
                           <Label htmlFor="name">{t.contact.fullName}</Label>
-                          <Input 
-                            id="name" 
+                          <Input
+                            id="name"
                             name="name"
                             value={formData.name}
                             onChange={handleInputChange}
-                            placeholder="John Doe" 
-                            required 
+                            placeholder="Your Name"
+                            required
                           />
                         </div>
-                        
+
                         <div className="space-y-2">
                           <Label htmlFor="email">{t.contact.email}</Label>
-                          <Input 
-                            id="email" 
+                          <Input
+                            id="email"
                             name="email"
                             type="email"
                             value={formData.email}
                             onChange={handleInputChange}
-                            placeholder="john@example.com" 
-                            required 
+                            placeholder="john@example.com"
+                            required
                           />
                         </div>
                       </div>
-                      
+
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div className="space-y-2">
                           <Label htmlFor="phone">{t.contact.phoneNumber}</Label>
-                          <Input 
-                            id="phone" 
+                          <Input
+                            id="phone"
                             name="phone"
                             value={formData.phone}
                             onChange={handleInputChange}
-                            placeholder="+1 234 567 8900" 
+                            placeholder="+91 0000000000"
                           />
                         </div>
-                        
+
                         <div className="space-y-2">
                           <Label htmlFor="subject">{t.contact.subject}</Label>
-                          <Input 
-                            id="subject" 
+                          <Input
+                            id="subject"
                             name="subject"
                             value={formData.subject}
                             onChange={handleInputChange}
-                            placeholder="Project Inquiry" 
-                            required 
+                            placeholder="Project Inquiry"
+                            required
                           />
                         </div>
                       </div>
-                      
+
                       <div className="space-y-2">
                         <Label htmlFor="message">{t.contact.message}</Label>
-                        <textarea 
-                          id="message" 
+                        <textarea
+                          id="message"
                           name="message"
                           value={formData.message}
                           onChange={handleInputChange}
-                          placeholder={t.contact.howCanWeHelp} 
+                          placeholder={t.contact.howCanWeHelp}
                           className="w-full min-h-[150px] p-3 rounded-md border border-input bg-background"
-                          required 
+                          required
                         />
                       </div>
-                      
+
                       <Button type="submit" className="w-full btn-primary">
                         <Send className="mr-2 h-4 w-4" />
                         {t.contact.send}
@@ -241,7 +241,7 @@ export default function Contact() {
             </div>
           </div>
         </section>
-        
+
         {/* FAQ Section */}
         <section className="section bg-muted">
           <div className="container">
@@ -251,7 +251,7 @@ export default function Contact() {
                 {t.contact.faqSubtitle}
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 animate-fade-in [animation-delay:200ms]">
               {[
                 { questionKey: "timeline" },
@@ -274,7 +274,7 @@ export default function Contact() {
           </div>
         </section>
       </main>
-      
+
       <Footer />
     </div>
   );

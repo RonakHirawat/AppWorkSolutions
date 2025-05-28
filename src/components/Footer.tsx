@@ -38,9 +38,9 @@ export default function Footer() {
               {[
                 { name: t.nav.home, path: "/" },
                 { name: t.nav.services, path: "/services" },
-                { name: t.nav.portfolio, path: "/portfolio" },
+                // { name: t.nav.portfolio, path: "/portfolio" },
                 { name: t.nav.contact, path: "/contact" },
-                { name: t.nav.getQuote, path: "/quote" },
+                // { name: t.nav.getQuote, path: "/quote" },
               ].map((link) => (
                 <li key={link.name}>
                   <Link 
@@ -60,18 +60,18 @@ export default function Footer() {
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-2 mt-0.5 text-primary" />
                 <span className="text-muted-foreground">
-                  123 Business District<br />
-                  Tech City, TC 12345<br />
-                  USA
+                G-202, Marbella Grand <br />
+                  Mohali, Punjab<br />
+                  INDIA
                 </span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 mr-2 text-primary" />
-                <span className="text-muted-foreground">+1 (555) 123-4567</span>
+                <span className="text-muted-foreground">+91 8806828336</span>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 mr-2 text-primary" />
-                <span className="text-muted-foreground">hello@appworksolutions.com</span>
+                <span className="text-muted-foreground">surbhi512@gmail.com</span>
               </li>
             </ul>
           </div>

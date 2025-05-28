@@ -3,10 +3,10 @@ export const en = {
   nav: {
     home: "Home",
     services: "Services",
-    portfolio: "Portfolio", 
+    portfolio: "Projects", 
     about: "About",
     contact: "Contact",
-    getQuote: "Get Quote",
+    // getQuote: "Get Quote",
     apartments: "Portfolio",
     amenities: "Services",
     gallery: "Portfolio",
@@ -14,7 +14,7 @@ export const en = {
   },
   hero: {
     title: "Professional Web & App Development",
-    subtitle: "Transform your ideas into powerful digital solutions",
+    // subtitle: "Transform your ideas into powerful digital solutions",
     description: "We specialize in creating custom websites, mobile applications, and digital platforms that drive business growth and user engagement.",
     cta: "Get Free Quote",
     secondaryCta: "View Portfolio",
@@ -249,7 +249,7 @@ export const en = {
     }
   },
   portfolio: {
-    title: "Our Portfolio",
+    title: "Our Projects",
     subtitle: "Explore our successful development projects and case studies.",
     featured: "Featured Projects",
     viewDetails: "View Details",
@@ -448,9 +448,9 @@ export const en = {
     returnHome: "Return Home"
   },
   testimonials: {
-    title: "What Our Clients Say",
-    subtitle: "Don't just take our word for it - see what our satisfied clients have to say about working with AppWorkSolutions.",
-    description: "Discover why businesses trust AppWorkSolutions for their digital transformation needs.",
+    title: "About Founder",
+    subtitle: "",
+    description: "",
     items: [
       {
         name: "Sarah Johnson",

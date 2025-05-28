@@ -16,7 +16,7 @@ export default function Navbar() {
   const navLinks = [
     { name: t.nav.home, path: "/" },
     { name: t.nav.services, path: "/services" },
-    { name: t.nav.portfolio, path: "/portfolio" },
+    // { name: t.nav.portfolio, path: "/portfolio" },
     { name: t.nav.contact, path: "/contact" }
   ];
 
@@ -35,7 +35,8 @@ export default function Navbar() {
     return path === "/" || path === "/contact";
   };
   
-  return <header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300", scrolled ? "bg-white/80 dark:bg-card/80 backdrop-blur-lg py-3 shadow-md" : "bg-transparent py-5")}>
+  return<header className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300", scrolled ? "bg-black/80 backdrop-blur-lg py-3 shadow-md" : "bg-black py-5")}>
+
       <nav className="container flex justify-between items-center">
         <div className="flex items-center">
           <Link to="/" className="text-xl font-bold text-primary">
@@ -61,9 +62,9 @@ export default function Navbar() {
 
         <div className="hidden md:flex items-center space-x-2">
           <ThemeToggle />
-          <Button asChild className="btn-primary">
+          {/* <Button asChild className="btn-primary">
             <Link to="/quote">{t.nav.getQuote}</Link>
-          </Button>
+          </Button> */}
         </div>
 
         {/* Mobile Navigation */}
@@ -105,9 +106,9 @@ export default function Navbar() {
             </div>
             
             <Button asChild className="w-full btn-primary mt-6">
-              <Link to="/quote" onClick={() => setMobileMenuOpen(false)}>
+              {/* <Link to="/quote" onClick={() => setMobileMenuOpen(false)}>
                 {t.nav.getQuote}
-              </Link>
+              </Link> */}
             </Button>
           </div>
         </div>
