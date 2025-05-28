@@ -271,7 +271,13 @@ export const it = {
     subtitle: "Esplora i nostri progetti di sviluppo di successo e casi di studio.",
     featured: "Progetti in Evidenza",
     viewDetails: "Vedi Dettagli",
-    bookNow: "Richiedi Preventivo"
+    bookNow: "Richiedi Preventivo",
+    filters: {
+      all: "Tutti",
+      web: "App Web",
+      mobile: "App Mobile",
+      ecommerce: "E-commerce"
+    }
   },
   apartmentDescriptions: {
     deluxe: "Applicazione web premium con funzionalità avanzate e design moderno.",
@@ -282,6 +288,17 @@ export const it = {
   booking: {
     availableFrom: "Disponibile da",
     perNight: "per progetto",
-    bookNow: "Richiedi Preventivo"
+    bookNow: "Richiedi Preventivo",
+    summary: "Riepilogo Progetto"
+  },
+  gallery: {
+    title: "Il Nostro Portfolio",
+    subtitle: "Esplora i nostri progetti di successo e casi di studio.",
+    filters: {
+      all: "Tutti",
+      web: "App Web",
+      mobile: "App Mobile",
+      ecommerce: "E-commerce"
+    }
   }
 };

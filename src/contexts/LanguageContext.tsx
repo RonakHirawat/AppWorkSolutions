@@ -1,7 +1,6 @@
 
-import React, { createContext, useState, useEffect, useContext, ReactNode } from 'react';
+import React, { createContext, useContext, ReactNode } from 'react';
 import { en } from '../locales/en';
-import { it } from '../locales/it';
 
 type Translations = typeof en;
 
@@ -11,31 +10,15 @@ interface LanguageContextType {
   t: Translations;
 }
 
-const translations: Record<string, Translations> = {
-  en,
-  it
-};
-
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguage] = useState('en');
-  const [t, setT] = useState<Translations>(translations.en);
-
-  useEffect(() => {
-    const savedLanguage = localStorage.getItem('language');
-    if (savedLanguage && translations[savedLanguage]) {
-      setLanguage(savedLanguage);
-      setT(translations[savedLanguage]);
-    }
-  }, []);
+  const language = 'en';
+  const t = en;
 
   const changeLanguage = (lang: string) => {
-    if (translations[lang]) {
-      setLanguage(lang);
-      setT(translations[lang]);
-      localStorage.setItem('language', lang);
-    }
+    // Language switching disabled - only English supported
+    console.log('Language switching disabled');
   };
 
   return (

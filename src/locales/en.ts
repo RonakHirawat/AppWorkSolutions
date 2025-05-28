@@ -271,7 +271,13 @@ export const en = {
     subtitle: "Explore our successful development projects and case studies.",
     featured: "Featured Projects",
     viewDetails: "View Details",
-    bookNow: "Get Quote"
+    bookNow: "Get Quote",
+    filters: {
+      all: "All",
+      web: "Web Apps",
+      mobile: "Mobile Apps",
+      ecommerce: "E-commerce"
+    }
   },
   apartmentDescriptions: {
     deluxe: "Premium web application with advanced features and modern design.",
@@ -282,6 +288,17 @@ export const en = {
   booking: {
     availableFrom: "Available from",
     perNight: "per project",
-    bookNow: "Get Quote"
+    bookNow: "Get Quote",
+    summary: "Project Summary"
+  },
+  gallery: {
+    title: "Our Portfolio",
+    subtitle: "Explore our successful projects and case studies.",
+    filters: {
+      all: "All",
+      web: "Web Apps",
+      mobile: "Mobile Apps",
+      ecommerce: "E-commerce"
+    }
   }
 };
